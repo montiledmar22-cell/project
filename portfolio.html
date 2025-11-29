@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+       <script>
+        const isLoggedIn = sessionStorage.getItem('loggedIn');
+        
+        if (!isLoggedIn) {
+            alert('Please login first!');
+            window.location.href = 'logIn.html';
+        }
+    </script>
+    
+    <header>
+        <img src="c:\Users\lenovo\Downloads\images.png" alt="Caraga State University Logo" class="logo">
+        <b>  Edmar P. Montil</b>
+        <button type="button" onclick="logOut()" class="logOut" style="float: right";>Log Out</button>
+    </header>
+    <nav>
+        <a href="#About">About</a>
+        <a href="#Skills">Hobbies</a>
+        <a href="#Contact">Contact</a>
+    </nav>
+    <section id="About">
+    <h2>About Me:</h2>
+    <p>Hello! My name is Edmar P. Montil, and I am currently a student at Caraga State University Cabadbaran Campus. I am passionate about learning and exploring new opportunities that help me grow both academically and personally.</p>
+    <p>In my free time, I have a deep love for entertainment, particularly reading manhwa and watching anime. These hobbies allow me to immerse myself in different stories and cultures, which inspire my creativity and broaden my perspective on life.</p>
+   
+    </section>
+
+    <section id="Skills">
+    <h2>Hobbies:</h2>
+    <div class="Skills">
+        <h3>Musical Instruments</h3>
+        <p>Knows how to play instruments e.g., Piano</p>
+    </div>
+    <div class="Skills">
+        <h3>Entertainment</h3>
+        <p>I enjoy watching and reading</p>
+    </div>
+    <div class="Skills">
+        <h3>Singing</h3>
+        <p>I love to Sing</p>
+    </div>
+</section>
+
+<section id="Contact">
+    <div class="Contact">
+        <h2>Contact</h2>
+        <p>Email: Montiledmar22@gmail.com</p>
+        <p>Phone: 09631871883</p>
+    </div>
+</section>
+    <footer>
+        <p>&copy; 2025 Edmar Montil</p>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+</html>
